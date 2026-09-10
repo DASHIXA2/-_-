@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для Эльвиры 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Фоновые звёзды -->
+  <div class="stars"></div>
+  <div class="stars stars2"></div>
+
+  <!-- Вступительный экран -->
+  <div id="intro" class="intro">
+    <div class="intro-content">
+      <p class="intro-small">Этот сайт создан специально для</p>
+      <h1 class="intro-name">Эльвиры</h1>
+      <p class="intro-small">от того, кто тебя очень любит 💖</p>
+      <button id="intro-btn">Открыть</button>
+    </div>
+  </div>
+
+  <!-- Кнопка музыки -->
+  <button id="music-btn" class="music-btn" title="Включить/выключить музыку">
+    <span id="music-icon">🔇</span>
+  </button>
+
+  <!-- Заголовок -->
+  <header>
+    <h1>Привет, Эльвира 💕</h1>
+    <p>Нажимай на сердечки и цветочки — там спрятаны наши моменты</p>
+    <p class="hint">🎵 Нажми на любую звёздочку, и заиграет наша песня</p>
+  </header>
+
+  <!-- Поле для летающих эмодзи -->
+  <div id="playground"></div>
+
+  <!-- Финальное признание -->
+  <div id="final" class="final">
+    <div class="final-content">
+      <div class="big-heart">💖</div>
+      <h2>Эльвира, я тебя очень люблю</h2>
+      <p>Спасибо, что ты есть в моей жизни.<br>Ты — моё самое большое счастье.</p>
+      <button id="restart">Посмотреть ещё раз</button>
+    </div>
+  </div>
+
+  <!-- Модальное окно с фото -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-inner">
+      <img id="modal-img" src="" alt="Фото">
+      <p id="modal-caption"></p>
+    </div>
+  </div>
+
+  <!-- Фоновая музыка -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
